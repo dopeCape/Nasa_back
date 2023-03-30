@@ -66,5 +66,5 @@ app.get("/user/:uid",async(req,res)=>{
 });
 
 app.listen("8000", () => {
-  console.log("server started on localhost://", port);
+  console.log("server started on port:", port);
 });
