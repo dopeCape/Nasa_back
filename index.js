@@ -18,7 +18,7 @@ app.use(cors())
 app.use(express.json());
 const uri = process.env.MONGO_URI;
 const port = process.env.PORT || 8000;
-mongoose.connect(uri).then(console.log);
+mongoose.connect(uri).then(console.log("connectd to MONGODB "));
 mongoose.connect(uri);
 
 const users = mongoose.model(
